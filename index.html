@@ -12,7 +12,7 @@
 <body>
 
         
-        <form>
+        <form id="jobForm">
                 <h1>فرم استخدامی</h1>
                 <p>لطفا فرم زیر را پر کنید تا پس از بررسی آن با شما تماس گرفته شد</p>
                 
@@ -39,7 +39,7 @@
 >
 
         <label>تاریخ تولد</label>
-        <input type="date" required>
+        <input type="date" id="birthdate" required>
 
         <br><br>
 
@@ -60,11 +60,11 @@
 
         <br><br>
 
-        <label for="national-id">تلفن همراه</label>
+        <label for="phone">تلفن همراه</label>
 <input
     type="text"
-    id="national-id"
-    name="national-id"
+    id="phone"
+    name="phone"
     placeholder=" شماره تلفن همراه خود را وارد کنید"
     maxlength="10"
     minlength="10"
@@ -77,7 +77,7 @@
 
         <br><br>
 
-        <select required>
+        <select id="degree" required>
             <option value="">مدرک تحصیلی</option>
             <option value="diplom">دیپلم</option>
             <option value="karshenasi">کارشناسی</option>
@@ -109,7 +109,7 @@
 
         <br><br>
 
-        <textarea rows="15" cols="45" placeholder="نظرات خود را اینجا وارد کنید"></textarea>
+        <textarea id="description" rows="15" cols="45" placeholder="نظرات خود را اینجا وارد کنید"></textarea>
 
         <br><br>
 
@@ -117,7 +117,6 @@
         <input type="reset" value="حذف اطلاعات">
 
     </form>
-
+<script src="script.js"></script>
 </body>
 </html>
-<!-- update -->
