@@ -153,11 +153,16 @@ form>*{
 h1{
     text-align:center;
     font-size:2.4rem;
-    margin-bottom:12px;
-    background:linear-gradient(90deg,#00ffd5,#ffffff,#8a7dff);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
     font-weight:700;
+    margin-bottom:12px;
+
+    background:linear-gradient(90deg,#00ffd5,#ffffff,#8a7dff);
+
+    background-clip:text;          /* نسخه استاندارد */
+    -webkit-background-clip:text;  /* برای Chrome و Safari */
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
 }
 
 p{
